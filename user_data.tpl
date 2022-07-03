@@ -23,3 +23,5 @@ chown -R ubuntu /home/ubuntu
 
 # Install nvim packages
 su - ubuntu -c 'nvim -es -u .config/nvim/init.vim -i NONE -c "PlugInstall" -c "qa"'
+
+su - ubuntu -c 'curl --proto "=https" --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y'
