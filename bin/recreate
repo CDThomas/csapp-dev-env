@@ -3,4 +3,4 @@
 set -e
 
 terraform destroy --auto-approve
-terraform create --auto-approve
+terraform apply --auto-approve
