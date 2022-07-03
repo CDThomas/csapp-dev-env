@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+set -e
+
+ssh -i ~/.ssh/$(terraform output --raw aws_ssh_key_name).pem ubuntu@$(terraform output --raw instance_public_ip)
