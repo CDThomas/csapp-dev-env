@@ -77,7 +77,7 @@ resource "aws_instance" "csapp" {
   vpc_security_group_ids      = [aws_security_group.csapp.id]
   subnet_id                   = aws_subnet.csapp.id
   associate_public_ip_address = true
-  user_data = file("user_data.tpl")
+  user_data = file("bootstrap")
 
   tags = {
     Name = "tf-scratch"
