@@ -66,6 +66,8 @@ The scripts are:
 
 ## Roadmap/To Investigate
 
+Potential features to explore. These may or may not actually be added depening on effort and whether or not the solution would line up with the project's goals.
+
 * Remove the need to have an existing SSH keypair in AWS
 * Provide SSH access through a bastion
 * Don't expose configuration through tfvars. Pass args to scripts or add a separate config file instead.
