@@ -9,35 +9,19 @@ data "http" "myip" {
 
 resource "aws_vpc" "csapp" {
   cidr_block = "172.31.0.0/16"
-
-  tags = {
-    Name = "tf-scratch-vpc"
-  }
 }
 
 resource "aws_subnet" "csapp" {
   vpc_id     = aws_vpc.csapp.id
   cidr_block = "172.31.0.0/20"
-
-  tags = {
-    Name = "tf-scratch-subnet"
-  }
 }
 
 resource "aws_internet_gateway" "csapp" {
   vpc_id = aws_vpc.csapp.id
-
-  tags = {
-    Name = "tf-scratch-ig"
-  }
 }
 
 resource "aws_route_table" "csapp" {
   vpc_id = aws_vpc.csapp.id
-
-  tags = {
-    Name = "tf-scratch-rt"
-  }
 }
 
 resource "aws_route" "default_route" {
@@ -78,10 +62,6 @@ resource "aws_instance" "csapp" {
   subnet_id                   = aws_subnet.csapp.id
   associate_public_ip_address = true
   user_data = file("bootstrap")
-
-  tags = {
-    Name = "tf-scratch"
-  }
 }
 
 output "instance_public_ip" {
