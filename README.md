@@ -71,4 +71,4 @@ Potential features to explore. These may or may not actually be added depening o
 * Remove the need to have an existing SSH keypair in AWS
 * Provide SSH access through a bastion
 * Allow users to specify a Github repo to clone when a dev env is created. Grant push/pull access to only this repo.
-* Allow for privisioning instances with other operating systems/architecures. In other words, add support for more than Ubuntu x86_64.
+* Allow for privisioning instances with other operating systems/architectures. In other words, add support for more than Ubuntu x86_64.
