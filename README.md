@@ -10,7 +10,7 @@ Goals of this project are to be:
 The dev environment is currently a Linux (Ubuntu) x86_64 EC2 instance.
 
 The instance includes:
-* [`gcc`](https://gcc.gnu.org/) and [`make`](https://www.gnu.org/software/make/) (via [build-essential](https://packages.ubuntu.com/jammy/build-essential))
+* [`gcc`](https://gcc.gnu.org/), [`make`](https://www.gnu.org/software/make/), and [`binutils`](https://www.gnu.org/software/binutils/) (via [build-essential](https://packages.ubuntu.com/jammy/build-essential))
 * [Rust](https://www.rust-lang.org/)
 * [Neovim](https://neovim.io/) with some [configuration](https://gist.github.com/CDThomas/3532c223ee44383e991b3ee991df6866).
 
