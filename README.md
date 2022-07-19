@@ -11,6 +11,7 @@ The dev environment is currently a Linux (Ubuntu) x86_64 EC2 instance.
 
 The instance includes:
 * [`gcc`](https://gcc.gnu.org/), [`make`](https://www.gnu.org/software/make/), and [`binutils`](https://www.gnu.org/software/binutils/) (via [build-essential](https://packages.ubuntu.com/jammy/build-essential))
+* [`gdb`](https://en.wikipedia.org/wiki/GNU_Debugger)
 * [Rust](https://www.rust-lang.org/)
 * [Neovim](https://neovim.io/) with some [configuration](https://gist.github.com/CDThomas/3532c223ee44383e991b3ee991df6866).
 
